@@ -11,7 +11,7 @@ Example:
 
 A browser webmail app may have multiple accounts for a user.  Logging in enables access to all of those accounts (unlike gmail).  
 
-If a user opens two tabs, and switches to a second account in the second tab, they may expect further links (on the second tab) to use their second account, while links in the first tab go to pages relevant to the primary account.  Having a 'compose' page opening in a new tab, yet using the parent-tab's account, would be a good exmaple of this.
+If a user opens two tabs, and switches to a second account in the second tab, they may expect further links (on the second tab) to use their second account, while links in the first tab go to pages relevant to the primary account.  Having a 'compose' page opening in a new tab, yet using the parent-tab's account, would be a good example of this.
 
 Furthermore, if they middle-click a link in their second tab, that 'child' tab should have some relation to the tab from which it was opened (i.e. use the same email account).
 
