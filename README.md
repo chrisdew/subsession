@@ -38,17 +38,15 @@ I am using a composite solution of URLised settings, where appropriate (good for
 Usage:
 ------
 
+SubSession is implemented as a jQuery plugin.  Simply including the JavaScript file is enough to make it work.
+
+    <script src="/js/jquery.subsession.js" type="text/javascript"> </script> 
+
 SubSession gives your web application two new cookies, 'subsession' and 'subsession_breadcrumb'.  SubSession does not include any server-side functionality - you'll have to develop this yourself, for your framework.
 
 The 'subsession' cookie contains small integer value which is guaranteed to be unique for that user's current session.  e.g. 7.
 
 The 'subsession_breadcrumb' cookie contains a path to the current subsession. e.g. 4/7 - the user middle clicked from subsession 4, crcreating subsession 7.
-
-
-Implementation:
----------------
-
-SubSession is implemented as a jQuery plugin.  Simply including the JavaScript file is enough to make it work.
 
 
 Server-side patterns:
