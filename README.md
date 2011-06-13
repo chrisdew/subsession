@@ -1,7 +1,7 @@
 SubSession
 ==========
 
-Tabs in browsers have given web users a new mental model which is at odds with how HTTP really works.
+Tabs in browsers have given web users a new mental model which is at odds with how HTTP works.
 
 On some web sites it would be a good thing if tabs could have settings which persisted in that tab, but did not affect other tabs (on the same web site). 
 
@@ -11,7 +11,7 @@ Example:
 
 A browser webmail app may have multiple accounts for a user.  Logging in enables access to all of those accounts (unlike gmail).  
 
-If a user opens two tabs, and switches to a second account in the second tab, they may expect further links (on the second tab) to use their second account, while links in the first tab go to pages relevant to the primary account.
+If a user opens two tabs, and switches to a second account in the second tab, they may expect further links (on the second tab) to use their second account, while links in the first tab go to pages relevant to the primary account.  Having a 'compose' page opening in a new tab, yet using the parent-tab's account, would be a good exmaple of this.
 
 Furthermore, if they middle-click a link in their second tab, that 'child' tab should have some relation to the tab from which it was opened (i.e. use the same email account).
 
