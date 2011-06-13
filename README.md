@@ -52,7 +52,7 @@ The *subsession_breadcrumb* cookie contains the path to the current subsession. 
 Server-side patterns:
 ---------------------
 
-SubSession stroage is typically a hash-map of the SessionID concatenated with the subsession ID.  If a setting cannot be found in HashMap(SessionID+subsession) it is idomatic to walk back up the *subsession_breadcrumb* until a setting is found in a 'parent' tab.
+SubSession storage is typically a hash-map of the SessionID concatenated with the subsession ID.  If a setting cannot be found in HashMap(SessionID+subsession) it is idomatic to walk back up the *subsession_breadcrumb* until a setting is found in a 'parent' tab.
 
 
 Bugs:
