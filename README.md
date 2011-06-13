@@ -42,17 +42,17 @@ SubSession is implemented as a jQuery plugin.  Simply including the JavaScript f
 
     <script src="/js/jquery.subsession.js" type="text/javascript"> </script> 
 
-SubSession gives your web application two new cookies, _subsession_ and _subsession_breadcrumb_.  SubSession does not include any server-side functionality - you'll have to develop this yourself, for your framework.
+SubSession gives your web application two new cookies, *subsession* and *subsession_breadcrumb*.  SubSession does not include any server-side functionality - you'll have to develop this yourself, for your framework.
 
-The _subsession_ cookie contains small integer value which is guaranteed to be unique for that user's current session.  e.g. 7.
+The *subsession* cookie contains small integer value which is guaranteed to be unique for that user's current session.  e.g. 7.
 
-The _subsession_breadcrumb_ cookie contains a path to the current subsession. e.g. 4/7 - the user middle clicked from subsession 4, crcreating subsession 7.
+The *subsession_breadcrumb* cookie contains a path to the current subsession. e.g. 4/7 - the user middle clicked from subsession 4, crcreating subsession 7.
 
 
 Server-side patterns:
 ---------------------
 
-SubSession stroage is typically a hash-map of the SessionID concatenated with the subsession ID.  If a setting cannot be found in HashMap(SessionID+subsession) it is idomatic to walk back up the subsession_breadcrumb until a setting is found in a 'parent' tab.
+SubSession stroage is typically a hash-map of the SessionID concatenated with the subsession ID.  If a setting cannot be found in HashMap(SessionID+subsession) it is idomatic to walk back up the *subsession_breadcrumb* until a setting is found in a 'parent' tab.
 
 
 Bugs:
