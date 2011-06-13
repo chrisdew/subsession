@@ -58,4 +58,8 @@ SubSession storage is typically a hash-map of the SessionID concatenated with th
 Bugs:
 -----
 
-As there is no concept of 'tabs' in HTTP/1.1, this code is a large hack.  It works by setting short lived cookies, using them as a message to the page that is about to be opened.  If your site often takes more than 20 seconds to load pages, you may want to increase the 'SHORT_DELAY' constant.
+As there is no concept of 'tabs' in HTTP/1.1, this code is a large hack.  It works by setting short lived cookies, using them as a message to the page that is about to be opened.  
+
+They are short lived so that tabs which are opened manually (i.e. not middle-clicked) and have a URL entered do not erroneously get associated with an existing subsession.
+
+If your site often takes more than 20 seconds to load pages, you may want to increase the 'SHORT_DELAY' constant.
