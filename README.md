@@ -28,8 +28,8 @@ The example above could be solved by putting the account id into the URL, i.e. h
 2. Tidyness - once you have decided to use a URLised setting, it must appear in *all* urls, otherwise the setting will be lost when navigating through pages which do not include the setting in their URL.  This http://www.cmail.com/myBookmarks will have to become http://www.cmail.com/chris@home.example.com/myBookmarks and http://www.cmail.com/chris@work.example.com/myBookmarks, even though both URLs point to the same resource and the email address has nothing to do with the resource.
 
 
-Composite:
-----------
+A Composite Solution:
+---------------------
 
 I am using a composite solution of URLised settings, where appropriate (good for sharing bookmarks) and just using the settings from the SubSession where the page has nothing to do with a particular setting.  e.g.  Your inbox link could be http://www.cmail.com/chris@work.example.com/inbox, even when you are on http://www.cmail.com/myBookmarks, as the current account can be associated with chris@work.example.com in the SubSession, on the server side.
 
