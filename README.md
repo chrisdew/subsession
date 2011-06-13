@@ -7,6 +7,7 @@ On some web sites it would be a good thing if tabs could have settings which per
 
 
 Example:
+========
 
 A browser webmail app may have multiple accounts for a user.  Logging in enables access to all of those accounts (unlike gmail).  
 
