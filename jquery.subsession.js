@@ -57,8 +57,8 @@ $(document).ready(function() {
   }
   setCookie('subsession', '', YEAR);
   setCookie('subsession_breadcrumb', '', YEAR);
-  $('#subsession').text(subsession);
-  $('#subsession_breadcrumb').text(subsession_breadcrumb);
+  //$('#subsession').text(subsession);
+  //$('#subsession_breadcrumb').text(subsession_breadcrumb);
   $('a').mousedown(onMouseDown);
   $(window).unload(onUnload);
 });
@@ -76,7 +76,7 @@ function onUnload() {
 // a newly opened tab will be a child of this subsession.
 // FIXME: add the behaviour to Context Menu >> Open In New Tab properly.
 function onMouseDown(e) {
-  console.log("e.which:", e.which, "e.button:", e.button);
+  //console.log("e.which:", e.which, "e.button:", e.button);
   if (e.which === 1) {
     onUnload();
   } else if (e.which === 2 || e.which === 3) {
