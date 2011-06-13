@@ -46,7 +46,7 @@ SubSession gives your web application two new cookies, *subsession* and *subsess
 
 The *subsession* cookie contains small integer value which is guaranteed to be unique for that user's current session.  e.g. 7.
 
-The *subsession_breadcrumb* cookie contains a path to the current subsession. e.g. 4/7 - the user middle clicked from subsession 4, crcreating subsession 7.
+The *subsession_breadcrumb* cookie contains a path to the current subsession. e.g. 4/7 - the user middle clicked from subsession 4, creating subsession 7.
 
 
 Server-side patterns:
