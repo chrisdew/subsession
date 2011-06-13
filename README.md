@@ -19,14 +19,14 @@ Furthermore, if they middle-click a link in their second tab, that 'child' tab s
 Other solutions:
 ----------------
 
-The example above could be solved by putting the account (or account id) into the URL, i.e. http://www.cmail.com/chris@home.example.com and http://www.cmail.com/chris@work.example.com
+The example above could be solved by putting the account (or account id) into the URL, i.e. http://webmail.example.com/chris@home.example.com and http://webmail.example.com/chris@work.example.com
 
 
 ### Issues with the URL solution:
 
 1. Scaling - if your have a half-dozen tab-specific settings your URLs will get ugly quickly.
-2. RESTfulness - once you have decided to use a URLised setting, it must appear in *all* urls, otherwise the setting will be lost when navigating through pages which do not include the setting in their URL.  
-   This http://www.cmail.com/myBookmarks will have to become http://www.cmail.com/chris@home.example.com/myBookmarks and http://www.cmail.com/chris@work.example.com/myBookmarks, even though both URLs point to the same resource and the email address has nothing to do with the resource.
+2. RESTfulness - once you have decided to use a URLised setting, it must appear in *all* urls, otherwise a setting will be lost when navigating through pages which do not include a setting in their URL.  
+   http://webmail.example.com/myBookmarks will have to become http://webmail.example.com/chris@home.example.com/myBookmarks and http://webmail.example.com/chris@work.example.com/myBookmarks, even though both URLs point to the same resource and the email address has nothing to do with the resource.
 
 
 A Composite Solution:
