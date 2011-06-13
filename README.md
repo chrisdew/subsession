@@ -11,7 +11,7 @@ Example:
 
 A browser webmail app may have multiple accounts for a user.  Logging in enables access to all of those accounts (unlike gmail).  
 
-If a user opens two tabs, and switches to a second account in the second tab, they may expect further links (on the second tab) to remuse their second account, while links in the first tab go to pages relevant to the primary account.
+If a user opens two tabs, and switches to a second account in the second tab, they may expect further links (on the second tab) to use their second account, while links in the first tab go to pages relevant to the primary account.
 
 Furthermore, if they middle-click a link in their second tab, that 'child' tab should have some relation to the tab from which it was opened (i.e. use the same email account).
 
@@ -19,13 +19,14 @@ Furthermore, if they middle-click a link in their second tab, that 'child' tab s
 Other solutions:
 ----------------
 
-The example above could be solved by putting the account id into the URL, i.e. http://www.cmail.com/chris@home.example.com and http://www.cmail.com/chris@work.example.com
+The example above could be solved by putting the account (or account id) into the URL, i.e. http://www.cmail.com/chris@home.example.com and http://www.cmail.com/chris@work.example.com
 
 
 ### Issues with the URL solution:
 
-1. Scaling - if your have a half-dozen tab-specific settings your URLs will get very ugly.
-2. Tidyness - once you have decided to use a URLised setting, it must appear in *all* urls, otherwise the setting will be lost when navigating through pages which do not include the setting in their URL.  This http://www.cmail.com/myBookmarks will have to become http://www.cmail.com/chris@home.example.com/myBookmarks and http://www.cmail.com/chris@work.example.com/myBookmarks, even though both URLs point to the same resource and the email address has nothing to do with the resource.
+1. Scaling - if your have a half-dozen tab-specific settings your URLs will get ugly quickly.
+2. RESTfulness - once you have decided to use a URLised setting, it must appear in *all* urls, otherwise the setting will be lost when navigating through pages which do not include the setting in their URL.  
+   This http://www.cmail.com/myBookmarks will have to become http://www.cmail.com/chris@home.example.com/myBookmarks and http://www.cmail.com/chris@work.example.com/myBookmarks, even though both URLs point to the same resource and the email address has nothing to do with the resource.
 
 
 A Composite Solution:
