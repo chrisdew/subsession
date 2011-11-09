@@ -1,6 +1,8 @@
 SubSession
 ==========
 
+Warning - this only works for a subset of use cases.  Do not use this without understanding the compromises you will need to make.
+
 Tabs in browsers have given web users a new mental model which is at odds with how HTTP works.
 
 On some web sites it would be a good thing if tabs could have settings which persisted in that tab, but did not affect other tabs (on the same web site). 
